@@ -7,7 +7,7 @@ from wordcloud_generator import WordCloudGenerator
 
 # Load environment variables from .env file
 import streamlit as st
-api_key = st.secrets["GENIUS_API_KEY"]
+api_key = st.secrets[GENIUS_API_KEY]
 
 # Configure Streamlit page
 st.set_page_config(
