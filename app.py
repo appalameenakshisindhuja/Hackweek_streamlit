@@ -1,15 +1,13 @@
 import streamlit as st
 import os
 import time
-from dotenv import load_dotenv
+
 from lyrics_fetcher import LyricsFetcher
 from wordcloud_generator import WordCloudGenerator
 
 # Load environment variables from .env file
-load_dotenv()
-
-# Get Genius API key
-api_key = os.getenv("GENIUS_API_KEY", "")
+import streamlit as st
+api_key = st.secrets["GENIUS_API_KEY"]
 
 # Configure Streamlit page
 st.set_page_config(
